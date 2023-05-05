@@ -1,14 +1,24 @@
+
 * {
-    background: #e5e5e5;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+
+* {
+    background: #E5E5E5;
     font-family: 'Inter', sans-serif;
+    text-rendering: optimizeLegibility;
     font-weight: 400;
     font-size: 32px;
     line-height: 150%;
 }
 
 .logo {
-    margin-left: 10px;
-    padding-top: 10px;
+    margin-left: 84px;
+    padding-top: 40px;
     width: 2%;
 }
 
@@ -51,7 +61,7 @@ main {
 
 .botoes {
     display: flex;
-    margin-top: 18px;
+    margin-top: 60px;
 }
 
 .bt-criptografar {
@@ -62,6 +72,12 @@ main {
     cursor: pointer;
     height: 67px;
     width: 328px;
+}
+
+.bt-criptografar:hover {
+    opacity: 0.7;
+        transform: scale(1.1);
+        cursor: pointer;
 }
 
 .bt-descriptografar {
@@ -75,6 +91,12 @@ main {
     width: 328px;
 }
 
+.bt-descriptografar:hover {
+    opacity: 0.7;
+        transform: scale(1.1);
+        cursor: pointer;
+}
+
 .bt-copiar {
     border: 1px solid #0A3871;
     border-radius: 24px;
@@ -83,11 +105,36 @@ main {
     height: 67px;
     width: 328px;
     margin-left: 135px;
-    margin-top: 402px;
+    margin-top: 350px;
     position: absolute;
 }
 
-.info {
+.bt-copiar:hover {
+    opacity: 0.7;
+        transform: scale(1.1);
+        cursor: pointer;
+}
+
+.sem-mensagem {
+    position: flex;
+    margin-left: 135px;
+    margin-top: 450px;
     color: #495057;
+    font-size: 20px;
+}
+
+.info h6 {
+    color: #495057;
+    font-size: 12px;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+footer li {
+    color: black;
     font-size: 12px;
 }
